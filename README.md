@@ -1,4 +1,4 @@
-Create an database
+Create a database
 Set your .env file
 Run the following commands
 
