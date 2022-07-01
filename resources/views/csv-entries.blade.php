@@ -12,6 +12,8 @@
 @endif
 
  <div id="csv-table"></div>
+
+@include('layouts.footer')
 <script>
 $(function(){
   var data = <?php echo json_encode($csvEntries);?>;
@@ -28,7 +30,3 @@ $(function(){
   });
 });
 </script>
-
-
-
-@include('layouts.footer')
