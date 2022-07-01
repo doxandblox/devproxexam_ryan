@@ -19,7 +19,7 @@ class CSVImport extends Migration
             $table->string('surname');
             $table->integer('age');
             $table->string('initials',4);
-            $table->string('date_of_birth');
+            $table->date('date_of_birth');
             $table->timestamps();
 
       });

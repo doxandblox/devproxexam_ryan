@@ -1,4 +1,4 @@
-@include('layouts/header')
+@include('layouts.header')
 <br>
 @if ($errors->any())
 <div class="alert alert-danger">
@@ -13,7 +13,7 @@
 
  <div id="csv-table"></div>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+$(function(){
   var data = <?php echo json_encode($csvEntries);?>;
   var table = new Tabulator("#csv-table", {
     data: data,
@@ -29,6 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-<script src="{{ URL::asset('vendor/tabulator/dist/js/tabulator.min.js') }}"></script>
 
-@include('layouts/footer')
+
+@include('layouts.footer')

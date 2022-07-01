@@ -30,6 +30,4 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-<script src="{{ URL::asset('vendor/tabulator/dist/js/tabulator.min.js') }}"></script>
-
 @include('layouts/footer')

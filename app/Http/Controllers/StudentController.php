@@ -40,9 +40,11 @@ class StudentController extends BaseController
             return Redirect::back()->withErrors(['msg' => 'Student Entry Exists']);
         }
         */
-
+	
         $idExcerpt = (substr($request->national_id,0,6));
+        $request->dob = \Carbon\Carbon::createFromDate(date('Y-m-d H:i:s', strtotime(str_replace('/', '-', $request->dob))))->toDateTimeString();
         $dtExcerpt = (substr(str_replace('-','',$request->dob),2,6));
+        
         if ($idExcerpt != $dtExcerpt){
             return Redirect::back()->withInput()->withErrors(['msg' => 'ID must match given date']);
         }

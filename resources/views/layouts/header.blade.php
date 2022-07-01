@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
 <head>
     <meta charset="utf-8">
     <!--A few headers to manage potential risks on public facing site-->
@@ -12,8 +12,11 @@
     <meta name="robots" content="noindex,nofollow">
     <meta name="X-Frame-Options" content="DENY">
     <title>Laravel</title>
-    <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet" type="text/css"/>
-    <link href="{{ URL::asset('vendor/tabulator/dist/css/tabulator_semanticui.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ URL::asset('/css/app.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ URL::asset('/css/messagebox.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ URL::asset('/css/datepicker.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ URL::asset('/css/tabulator_semanticui.min.css') }}" rel="stylesheet" type="text/css"/>
+
 </head>
 <!--Simple body to present resulting application of test-->
 <body class="antialiased">
@@ -23,6 +26,7 @@
    <nav>
     <a href="/">Home</a>
     <a href="/Devprox developer test 2.pdf">Requirements Check</a>
-    <a href="/students">Test Attempt</a>
+    <a href="/students">Test Part 1</a>
+    <a href="/csv">Test Attempt Part 2</a>
    </nav>
 </header>
