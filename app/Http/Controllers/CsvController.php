@@ -32,7 +32,7 @@ class CsvController extends BaseController
 
 		//Initialize utilized arrays
 		$namesArr = \App\Models\CsvImport::factory()->names($randomIndexEndRange);
-		$surnamesArr = \App\Models\CsvImport::factory()->names($randomIndexEndRange);
+		$surnamesArr = \App\Models\CsvImport::factory()->surnames($randomIndexEndRange);
 		//Instantiate Helper
 		$cs = new CsvHelper();
 		//Lets start with the headers
