@@ -34,7 +34,7 @@ class CsvImportFactory extends Factory
 
     public function surnames($n){
         $arr = [];
-        for($i = 0; $i<$n; $i++){
+        for($i = 0; $i<$n+1; $i++){
             array_push($arr, $this->faker->firstName());
         }
         return $arr;
